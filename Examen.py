@@ -7,8 +7,8 @@ ventana=tk.Tk()
 ventana.title("Examen de Programación")
 ventana.geometry("920x520")
 ttk.Label(ventana, text="Primer examen de Programación").grid(column=1,row=0)
-calificacion=0
 def clickMe():
+    calificacion=0
     if(Pregunta1.get()=="if():"):calificacion=calificacion+2
     if(Pregunta2.get()=="tkinter"):calificacion=calificacion+2
     if(opcion.get()=="INT"):calificacion=calificacion+2
@@ -16,7 +16,7 @@ def clickMe():
     if(opcion_1.get()==1 and opcion_4.get()==1 and opcion_2.get()==0 and opcion_3.get()==0 and opcion_5.get()==0):calificacion=calificacion+2
     ventana2=tk.Tk()
     ventana2.title("Calificacion")
-    ttk.Label(ventana2,text="La calificacion es: "+calificacion).grid(column=0, row=0)
+    ttk.Label(ventana2,text="La calificacion es: "+str.calificacion).grid(column=0, row=0)
 
 #Text Boxes
 Pregunta1=tk.StringVar()
@@ -38,11 +38,11 @@ radio3.grid(column=2, row=4, sticky=tk.W)
 
 ttk.Label(ventana, text="El primero en entrar es el último en salir\ny el último en entrar es el primero en salir").grid(column=1, row=5)
 opcion2=tk.StringVar()
-radio4=tk.Radiobutton(ventana, text="Pila", variable=opcion,value="Pila")
+radio4=tk.Radiobutton(ventana, text="Pila", variable=opcion2,value="Pila")
 radio4.grid(column=0, row=6, sticky=tk.W)
-radio5=tk.Radiobutton(ventana, text="Cola", variable=opcion,value="Cola")
+radio5=tk.Radiobutton(ventana, text="Cola", variable=opcion2,value="Cola")
 radio5.grid(column=1, row=6, sticky=tk.W)
-radio6=tk.Radiobutton(ventana, text="Lista", variable=opcion,value="Lista")
+radio6=tk.Radiobutton(ventana, text="Lista", variable=opcion2,value="Lista")
 radio6.grid(column=2, row=6, sticky=tk.W)
 
 #Check Button
