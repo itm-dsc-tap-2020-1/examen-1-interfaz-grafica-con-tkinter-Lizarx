@@ -16,7 +16,7 @@ def clickMe():
     if(opcion_1.get()==1 and opcion_4.get()==1 and opcion_2.get()==0 and opcion_3.get()==0 and opcion_5.get()==0):calificacion=calificacion+2
     ventana2=tk.Tk()
     ventana2.title("Calificacion")
-    ttk.Label(ventana2,text="La calificacion es: "+str.calificacion).grid(column=0, row=0)
+    ttk.Label(ventana2,text="La calificacion es: "+str(calificacion)).grid(column=0, row=0)
 
 #Text Boxes
 Pregunta1=tk.StringVar()
